@@ -1,15 +1,24 @@
 <template>
 	<div>
-		<h1>Hello World!!!!!!!</h1>
+		<Header></Header>
+		<TitleBar></TitleBar>
+		<SearchBar></SearchBar>
+		<ProductWrap></ProductWrap>
 	</div>
 </template>
 
 <script>
-export default {
+import Header from './components/Header.vue'
+import TitleBar from './components/TitleBar.vue'
+import SearchBar from './components/SearchBar.vue'
+import ProductWrap from './components/ProductWrap.vue'
 
+
+export default {
+	components: { Header, TitleBar, SearchBar, ProductWrap }
 }
 </script>
 
 <style>
-	body {color: green;}
+	
 </style>
